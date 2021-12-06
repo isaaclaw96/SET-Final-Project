@@ -1,0 +1,23 @@
+.register_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+form>*{
+    margin: 5px;   
+}
+input{
+    padding: 8px;
+}
+button{
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+}

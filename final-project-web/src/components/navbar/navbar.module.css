@@ -1,0 +1,36 @@
+nav{
+    width: 100%;
+    position: fixed;
+}
+.top_section{
+    background-color: #40b7ad;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_section{
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    width: 100%; 
+    text-align: center;
+}
+
+.nav_section:hover {
+    background-color: #000;
+}
+
+.nav_section_logout{
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+

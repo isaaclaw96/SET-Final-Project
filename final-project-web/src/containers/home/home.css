@@ -1,0 +1,11 @@
+.home{
+    padding: 50px;
+}
+
+.details{
+    padding: 20px 0;
+}
+
+.details>* {
+    margin-bottom: 30px;
+}

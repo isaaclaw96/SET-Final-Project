@@ -1,0 +1,89 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/register
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 191 characters.'
+        required: true
+        example: gllyvysnqgjkjnibdzeqbgkjhznaxpshfvfxfrneqtupzxfvglqpzmyjmerpxyksxyy
+        type: string
+      email:
+        name: email
+        description: 'Must be a valid email address. Must not be greater than 191 characters.'
+        required: true
+        example: kmzbfnccjftnzatevujwpvjomcmvnkpasbxwxtiweojxapbbxlgudcjvjjsdvxojczfkpxedqmntxgqcvjrmqurgvczqoklyfmkrgmwcnhaq
+        type: string
+      password:
+        name: password
+        description: 'Must be at least 8 characters.'
+        required: true
+        example: hkuar
+        type: string
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/login
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must not be greater than 191 characters.'
+        required: true
+        example: ubuifmzldfddphhuapsktlaprbzdzcdgdkestemrdxjfiyhk
+        type: string
+      password:
+        name: password
+        description: ''
+        required: true
+        example: eveniet
+        type: string
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/user
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          vary: Origin
+        description: null
+    responseFields: []

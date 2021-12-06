@@ -1,0 +1,39 @@
+.login_section{
+    display: flex;
+    padding: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img {
+    width:50%;
+    height:50%;
+}
+
+h1{
+    padding: 20px;
+}
+form{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+form>*{
+    margin: 5px;   
+}
+input{
+    padding: 8px;
+}
+button{
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+}
+span{
+    color: red;
+}
